@@ -1,5 +1,4 @@
 //WAP to print opposite pyramid
-//WAP to print triangle
 #include<iostream>
 using namespace std;
 int main(){
