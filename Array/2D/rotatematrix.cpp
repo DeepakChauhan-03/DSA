@@ -1,4 +1,4 @@
-//WAP to rotate a matrix by 90 degree
+//WAP to rotate a matrix by 90 degree clockwise
 #include<iostream>
 using namespace std;
 int main(){
