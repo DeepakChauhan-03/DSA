@@ -1,26 +1,38 @@
 #include<iostream>
+#include<vector>
 using namespace std;
+
+void reverse(int i, int j, vector <int> &v){
+    while(i<j){
+        int temp = v[i];
+        v[i]=v[j];
+        v[j]=temp;
+        i++;
+        j--;
+    }
+}
 int main(){
-    // int n;
-    // cout<<"Enter size of array : ";
-    // cin>>n;
-    // int arr[n];
-    // cout<<"Enter elements of array : ";
-    // for(int i=0; i<n; i++){
-    //     cin>>arr[i];
+    vector <int> v;
+    v.push_back(10);
+    v.push_back(20);
+    v.push_back(30);
+    v.push_back(40);
+    v.push_back(50);
+
+    int first = 0;
+    int last = v.size()-1;
+    // while(first<last){
+    //     int temp = v[first];
+    //     v[first] = v[last];
+    //     v[last] = temp;
+    //     first++;
+    //     last--;
     // }
-
-    int n;
-    cin>>n;
-    if(n%n==0 && n%1==n){
-        cout<<"Prime number";
+    reverse(1,3,v);
+    for(int i=0; i<v.size(); i++){
+        cout<<v[i]<<" ";
     }
-    else{
-        cout<<"Not prime number";
-    }
-   
-
-
+    
 
     return 0;
 }
